@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-label="git aliases lite">
+<style>
+.bg{fill:#0d1117}
+.t{font:700 38px monospace;fill:#e6edf3}
+.s{font:16px monospace;fill:#8b949e}
+.rail{stroke:#30363d;stroke-width:3;fill:none}
+.flow{stroke:#3fb950;stroke-width:3;fill:none;stroke-dasharray:300;stroke-dashoffset:300;animation:draw 3.5s ease-in-out infinite}
+.dot{fill:#58a6ff;transform-box:fill-box;transform-origin:center;animation:pulse 3.5s ease-in-out infinite}
+.d2{animation-delay:.5s}.d3{animation-delay:1s}.d4{animation-delay:1.5s}
+.cur{fill:#3fb950;animation:blink 1s steps(2) infinite}
+@keyframes draw{0%{stroke-dashoffset:300}65%,100%{stroke-dashoffset:0}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.6)}}
+@keyframes blink{50%{opacity:0}}
+</style>
+<rect class="bg" width="800" height="200" rx="14"/>
+<path class="rail" d="M60 130 H260 M160 130 Q200 130 220 90 H260"/>
+<path class="flow" d="M60 130 H260 M160 130 Q200 130 220 90 H260"/>
+<circle class="dot" cx="60" cy="130" r="8"/>
+<circle class="dot d2" cx="160" cy="130" r="8"/>
+<circle class="dot d3" cx="260" cy="130" r="8"/>
+<circle class="dot d4" cx="260" cy="90" r="8"/>
+<text class="t" x="320" y="105">git aliases lite</text>
+<text class="s" x="322" y="140">$ git lg &#183; git wip &#183; git undo</text>
+<rect class="cur" x="590" y="126" width="10" height="18"/>
+</svg>
