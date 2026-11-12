@@ -1,0 +1,25 @@
+[alias]
+	st = status -sb
+	co = checkout
+	sw = switch
+	swc = switch -c
+	br = branch -vv
+	cm = commit -m
+	ca = commit --amend --no-edit
+	amend = commit --amend
+	unstage = reset HEAD --
+	undo = reset --soft HEAD~1
+	discard = checkout --
+	df = diff --stat
+	dc = diff --cached
+	lg = log --graph --date=short --pretty=format:'%C(yellow)%h%Creset %C(cyan)%ad%Creset %s %C(green)(%an)%Creset%C(red)%d%Creset' -20
+	last = log -1 --stat
+	wip = !git add -A && git commit -m wip
+	sync = pull --rebase --autostash
+	pf = push --force-with-lease
+	recent = for-each-ref --sort=-committerdate --count=10 --format='%(refname:short)' refs/heads/
+	cleanup = !git branch --merged | grep -vE '^[*]|main|master|develop' | xargs -r git branch -d
+	contributors = shortlog -sn --no-merges
+	root = rev-parse --show-toplevel
+	whoami = !git config user.name && git config user.email
+	aliases = config --get-regexp '^alias[.]'
