@@ -1,4 +1,6 @@
 <p align="center">
+
+<p align="center"><img src="assets/readme-banner.svg" alt="Animated Git Aliases Lite terminal banner" width="100%"></p>
   <img src="assets/banner.svg" alt="git aliases lite" width="100%">
 </p>
 
